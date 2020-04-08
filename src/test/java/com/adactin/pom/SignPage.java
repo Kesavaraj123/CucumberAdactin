@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SignPage {
 	public static WebDriver driver;
-	
+
 	@FindBy(id = "username")
 	private WebElement username;
 	@FindBy(id = "password")
@@ -15,17 +15,18 @@ public class SignPage {
 	@FindBy(id = "login")
 	private WebElement loginbutton;
 
-	
-	  public SignPage(WebDriver driver2) { this.driver=driver2;
-	  PageFactory.initElements(driver, this); }
-	 
+	public SignPage(WebDriver driver2) {
+		this.driver = driver2;
+		PageFactory.initElements(driver, this);
+	}
+
 	/*
 	 * public SignPage(WebDriver driver2) { this.driver = driver2;
 	 * PageFactory.initElements(driver, this);
 	 * 
 	 * }
 	 */
-	 
+
 	public WebElement getUsername() {
 		return username;
 	}

@@ -25,7 +25,7 @@ public class BaseClass {
 		try {
 			if (browsername.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver",
-						"C:\\Users\\kesavaraj\\eclipse-workspace\\CucumberAdactin\\Driver\\chromedriver.exe");
+						"C:\\Users\\kesavaraj\\eclipse-workspace\\AdactinCucumber\\Driver\\chromedriver.exe");
 				driver = new ChromeDriver();
 			} else if (browsername.equalsIgnoreCase("ie")) {
 

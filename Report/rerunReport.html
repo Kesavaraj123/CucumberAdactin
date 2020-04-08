@@ -48,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Apr 9, 2020 12:42:21 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Apr 9, 2020 03:47:30 AM</span>
 				</a>
 			</li>
 			<li>
@@ -75,6 +75,7 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -138,7 +139,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -150,10 +151,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='83.333%'><span class='strong'>5</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='71.429%'><span class='strong'>5</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -165,10 +166,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='98.039%'><span class='strong'>50</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='89.286%'><span class='strong'>50</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='1.961%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.786%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='8.929%'>5</span> others
 				</div>
 			</div>
 		</div>
@@ -182,21 +183,81 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Testing login function on adactin application</span>
-						<span class='test-time'>Apr 9, 2020 12:42:23 AM</span>
+						<span class='test-time'>Apr 9, 2020 03:47:30 AM</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='2' status='skip'>
+	<span class='duration right label'>0h 0m 0s+491ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">user checking booking is confired and done logout</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='3' class='node given skip' status='skip'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given user to launch the browser</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='4' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When user to login to  application</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='5' class='node given skip' status='skip'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given user navigated to confirmation page</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='6' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When user to click on the Logout button</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='7' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then user to validate the account logout</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Testing login function on adactin application</span>
+						<span class='test-time'>Apr 9, 2020 03:47:55 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 57s+1ms</span>
+<div class='scenariooutline node' test-id='9' status='pass'>
+	<span class='duration right label'>0h 1m 51s+587ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">user checking the login funtion using valid username and valid password</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario pass' status='pass'>
+		<li test-id='10' class='node scenario pass' status='pass'>
 			<div class='category-list'>
 				<span class='category label white-text'>@login</span>
 			</div>
@@ -206,37 +267,37 @@
 			<span class="bdd-step-name">user checking the login funtion using valid username and valid password</span>
 			
 				<ul class='steps'>
-					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
+					<li test-id='11' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given user to launch the browser</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='5' class='node when pass' status='pass'><b>When</b>
+					<li test-id='12' class='node when pass' status='pass'><b>When</b>
 						<span class="bdd-step-name">When user to login to  application</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='6' class='node given pass' status='pass'><b>Given</b>
+					<li test-id='13' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given user launch the adactin application</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='7' class='node when pass' status='pass'><b>When</b>
+					<li test-id='14' class='node when pass' status='pass'><b>When</b>
 						<span class="bdd-step-name">When user enter valid username "asadas" on user name field</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='8' class='node and pass' status='pass'><b>And</b>
+					<li test-id='15' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And user enter valid password "12334" on password field</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='9' class='node and pass' status='pass'><b>And</b>
+					<li test-id='16' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And user click on the login button</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='10' class='node then pass' status='pass'><b>Then</b>
+					<li test-id='17' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then user validate the name Of the user in homepage</span>
 							<div class='pre'>passed</div>
 					</li>
 				</ul>
 		</li>
-		<li test-id='11' class='node scenario pass' status='pass'>
+		<li test-id='18' class='node scenario pass' status='pass'>
 			<div class='category-list'>
 				<span class='category label white-text'>@login</span>
 			</div>
@@ -246,31 +307,31 @@
 			<span class="bdd-step-name">user checking the login funtion using valid username and valid password</span>
 			
 				<ul class='steps'>
-					<li test-id='12' class='node given pass' status='pass'><b>Given</b>
+					<li test-id='19' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given user to launch the browser</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='13' class='node when pass' status='pass'><b>When</b>
+					<li test-id='20' class='node when pass' status='pass'><b>When</b>
 						<span class="bdd-step-name">When user to login to  application</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='14' class='node given pass' status='pass'><b>Given</b>
+					<li test-id='21' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given user launch the adactin application</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='15' class='node when pass' status='pass'><b>When</b>
+					<li test-id='22' class='node when pass' status='pass'><b>When</b>
 						<span class="bdd-step-name">When user enter valid username "keshavunique" on user name field</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='16' class='node and pass' status='pass'><b>And</b>
+					<li test-id='23' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And user enter valid password "12345678" on password field</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='17' class='node and pass' status='pass'><b>And</b>
+					<li test-id='24' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And user click on the login button</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='18' class='node then pass' status='pass'><b>Then</b>
+					<li test-id='25' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then user validate the name Of the user in homepage</span>
 							<div class='pre'>passed</div>
 					</li>
@@ -278,14 +339,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='19' status='pass'>
-	<span class='duration right label'>0h 0m 25s+873ms</span>
+<div class='scenario node' test-id='26' status='pass'>
+	<span class='duration right label'>0h 0m 5s+572ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">user to  fill the booking details</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='20' class='node given pass' status='pass'>
+		<li test-id='27' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -293,7 +354,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='21' class='node when pass' status='pass'>
+		<li test-id='28' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -301,7 +362,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='22' class='node given pass' status='pass'>
+		<li test-id='29' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -309,7 +370,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='23' class='node when pass' status='pass'>
+		<li test-id='30' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -317,7 +378,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='24' class='node and pass' status='pass'>
+		<li test-id='31' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -325,7 +386,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='25' class='node and pass' status='pass'>
+		<li test-id='32' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -333,7 +394,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='26' class='node and pass' status='pass'>
+		<li test-id='33' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -341,7 +402,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='27' class='node and pass' status='pass'>
+		<li test-id='34' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -349,7 +410,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='28' class='node and pass' status='pass'>
+		<li test-id='35' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -357,7 +418,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='29' class='node and pass' status='pass'>
+		<li test-id='36' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -365,7 +426,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='30' class='node and pass' status='pass'>
+		<li test-id='37' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -373,7 +434,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='31' class='node and pass' status='pass'>
+		<li test-id='38' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -381,7 +442,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='32' class='node then pass' status='pass'>
+		<li test-id='39' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -391,68 +452,11 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='33' status='pass'>
-	<span class='duration right label'>0h 0m 14s+682ms</span>
+<div class='scenario node' test-id='40' status='pass'>
+	<span class='duration right label'>0h 0m 4s+997ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">user to validate the booked details</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='34' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given user to launch the browser</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='35' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When user to login to  application</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='36' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given user navigated to booked details page</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='37' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When user to click on the check box button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='38' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And user to click on the Continue button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='39' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then user confirmes the user booked details page</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='40' status='pass'>
-	<span class='duration right label'>0h 0m 30s+91ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">user to fill personal details and done  payment</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='41' class='node given pass' status='pass'>
@@ -475,7 +479,7 @@
 			
 			<b>Given</b>
 			
-			<span class="bdd-step-name">Given user navigated to payment page</span>
+			<span class="bdd-step-name">Given user navigated to booked details page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -483,7 +487,7 @@
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When user to fill the valid firstname "keshav " in firstname field</span>
+			<span class="bdd-step-name">When user to click on the check box button</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -491,55 +495,56 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And user to fill the valid lastname  "billa " in lastname field</span>
+			<span class="bdd-step-name">And user to click on the Continue button</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='46' class='node and pass' status='pass'>
+		<li test-id='46' class='node then pass' status='pass'>
 			
-			<b>And</b>
+			<b>Then</b>
 			
-			<span class="bdd-step-name">And user to fill valid address "no 67 sri abirami garden unnalamai chetty" on the address field</span>
+			<span class="bdd-step-name">Then user confirmes the user booked details page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='47' class='node and pass' status='pass'>
+	</ul>
+</div>
+<div class='scenario node' test-id='47' status='pass'>
+	<span class='duration right label'>0h 0m 10s+884ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">user to fill personal details and done  payment</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='48' class='node given pass' status='pass'>
 			
-			<b>And</b>
+			<b>Given</b>
 			
-			<span class="bdd-step-name">And user to give valid credit card number "1234567891234567"  on the credit card filed</span>
+			<span class="bdd-step-name">Given user to launch the browser</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='48' class='node and pass' status='pass'>
+		<li test-id='49' class='node when pass' status='pass'>
 			
-			<b>And</b>
+			<b>When</b>
 			
-			<span class="bdd-step-name">And user to select valid credit card type on the credit card type field</span>
+			<span class="bdd-step-name">When user to login to  application</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='49' class='node and pass' status='pass'>
+		<li test-id='50' class='node given pass' status='pass'>
 			
-			<b>And</b>
+			<b>Given</b>
 			
-			<span class="bdd-step-name">And user to select valid expire  month on month field</span>
+			<span class="bdd-step-name">Given user navigated to payment page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='50' class='node and pass' status='pass'>
+		<li test-id='51' class='node when pass' status='pass'>
 			
-			<b>And</b>
+			<b>When</b>
 			
-			<span class="bdd-step-name">And user to select valid expire year on year field</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='51' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And user to fill valid ccv number "366" on ccv field</span>
+			<span class="bdd-step-name">When user to fill the valid firstname "keshav " in firstname field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -547,11 +552,67 @@
 			
 			<b>And</b>
 			
+			<span class="bdd-step-name">And user to fill the valid lastname  "billa " in lastname field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='53' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user to fill valid address "no 67 sri abirami garden unnalamai chetty" on the address field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='54' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user to give valid credit card number "1234567891234567"  on the credit card filed</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='55' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user to select valid credit card type on the credit card type field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='56' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user to select valid expire  month on month field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='57' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user to select valid expire year on year field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='58' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user to fill valid ccv number "366" on ccv field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='59' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
 			<span class="bdd-step-name">And user to click on book now button</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='53' class='node then pass' status='pass'>
+		<li test-id='60' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -561,14 +622,14 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='54' status='fail'>
-	<span class='duration right label'>0h 0m 54s+501ms</span>
+<div class='scenario node' test-id='61' status='fail'>
+	<span class='duration right label'>0h 0m 21s+52ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">user checking booking is confired and done logout</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='55' class='node given pass' status='pass'>
+		<li test-id='62' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -576,7 +637,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='56' class='node when pass' status='pass'>
+		<li test-id='63' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -584,7 +645,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='57' class='node given pass' status='pass'>
+		<li test-id='64' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -592,7 +653,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='58' class='node when pass' status='pass'>
+		<li test-id='65' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -600,7 +661,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='59' class='node then fail' status='fail'>
+		<li test-id='66' class='node then fail' status='fail'>
 			
 			<b>Then</b>
 			
@@ -692,13 +753,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 9, 2020 12:42:23 AM</td>
-										<td class='linked' test-id='3'>Testing login function on adactin application.user checking the login funtion using valid username and valid password.user checking the login funtion using valid username and valid password</td>
+										<td>Apr 9, 2020 03:47:56 AM</td>
+										<td class='linked' test-id='10'>Testing login function on adactin application.user checking the login funtion using valid username and valid password.user checking the login funtion using valid username and valid password</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 9, 2020 12:42:53 AM</td>
-										<td class='linked' test-id='11'>Testing login function on adactin application.user checking the login funtion using valid username and valid password.user checking the login funtion using valid username and valid password</td>
+										<td>Apr 9, 2020 03:49:24 AM</td>
+										<td class='linked' test-id='18'>Testing login function on adactin application.user checking the login funtion using valid username and valid password.user checking the login funtion using valid username and valid password</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -760,8 +821,8 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Apr 9, 2020 12:44:50 AM</td>
-                                                        <td class='linked' test-id='59'>Testing login function on adactin application.user checking booking is confired and done logout.Then user to validate the account logout</td>
+                                                        <td>Apr 9, 2020 03:50:17 AM</td>
+                                                        <td class='linked' test-id='66'>Testing login function on adactin application.user checking booking is confired and done logout.Then user to validate the account logout</td>
                                                         <td><pre><textarea>junit.framework.ComparisonFailure: expected:<[]> but was:<[    ]>
 	at junit.framework.Assert.assertEquals(Assert.java:100)
 	at junit.framework.Assert.assertEquals(Assert.java:107)
@@ -793,37 +854,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>51</div>
+					<div class='panel-lead'>56</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 9, 2020 12:42:21 AM</div>
+					<div class='panel-lead'>Apr 9, 2020 03:47:30 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 9, 2020 12:45:48 AM</div>
+			 		<div class='panel-lead'>Apr 9, 2020 03:50:39 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>207,596ms</div>
+					<div class='panel-lead'>189,128ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -865,26 +926,26 @@
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
-				exceptionsParent: 1,
+				skipParent: 1,
+				exceptionsParent: 2,
 				
 				passChild: 5,
 				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 0,
+				skipChild: 1,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 2,
 				
 				passGrandChild: 50,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 5,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 6,
 			};
 		</script>
 		

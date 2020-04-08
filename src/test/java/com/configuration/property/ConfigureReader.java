@@ -18,7 +18,7 @@ public class ConfigureReader {
 	public ConfigureReader() throws IOException {
 
 		File f = new File(
-				"C:\\Users\\kesavaraj\\eclipse-workspace\\CucumberAdactin\\src\\test\\java\\com\\configuration\\property\\Configuration.properties");
+				"C:\\Users\\kesavaraj\\eclipse-workspace\\AdactinCucumber\\src\\test\\java\\com\\configuration\\property\\Configuration.properties");
 		FileInputStream fis = new FileInputStream(f);
 
 		p = new Properties();

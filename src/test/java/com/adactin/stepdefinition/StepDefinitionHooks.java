@@ -35,12 +35,13 @@ public class StepDefinitionHooks {
 }
 
 // its just a another way implemation or method
+
 /*
  * @Before public void beforeHook(Scenario ref) {
  * System.out.println("before hook");
  * 
- * System.out.println("scenario name is:" + ref.getName()); if
- * (ref.getName().equalsIgnoreCase(ref.getName())) { BaseClass.screenShot(
+ * System.out.println("scenario name is:" + ref.getName());
+ * if(ref.getName().equalsIgnoreCase(ref.getName())) { BaseClass.screenShot(
  * "C:\\Users\\kesavaraj\\eclipse-workspace\\CucumberAdactin\\Screenshot\\before.png"
  * );
  * 
@@ -58,7 +59,7 @@ public class StepDefinitionHooks {
  * "C:\\Users\\kesavaraj\\eclipse-workspace\\CucumberAdactin\\Screenshot\\pass.png"
  * );
  * 
- * } else if(ref1.isFailed()||ref1.getStatus().equalsIgnoreCase("failed")) {
+ * } else if(ref1.isFailed() && ref1.getStatus().equalsIgnoreCase("failed")) {
  * BaseClass.screenShot(
  * "C:\\Users\\kesavaraj\\eclipse-workspace\\CucumberAdactin\\Screenshot\\fail.png"
  * );

@@ -1,5 +1,7 @@
 package com.adactin.runner;
 
+import org.junit.runner.RunWith;
+
 import java.io.IOException;
 
 import org.junit.AfterClass;
@@ -12,20 +14,16 @@ import com.configuration.property.FileReadManager;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import cucumber.api.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src\\test\\java\\com\\adactin\\feature\\Adactin.feature", 
-glue = "com\\adactin\\stepdefinition",
-plugin = {
-		"pretty", "html:Report", "com.cucumber.listener.ExtentCucumberFormatter:Report\\extentReport.html",
-		"rerun:Report/FailedScenario.txt" },
-		// plugin=
-		// {"pretty","html:Report","com.cucumber.listener.ExtentCucumberFormatter:report\\extentReport.html"},
-		// "rerun:Report1/FailedScenario.txt"
-		monochrome = true, dryRun = false, strict = true)
+@CucumberOptions(features = "@Report/FailedScenario.txt", 
+                 glue = "com\\adactin\\stepdefition",
+                 plugin = {"pretty","com.cucumber.listener.ExtentCucumberFormatter:Report/rerunReport.html" }, 
+                 monochrome = true, 
+                 dryRun = false, strict = true)
 
-public class Runner {
-
+public class ReRunner {
 	public static WebDriver driver;
 
 	@BeforeClass
@@ -42,3 +40,6 @@ public class Runner {
 	}
 
 }
+
+
+

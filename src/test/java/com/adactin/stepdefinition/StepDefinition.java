@@ -21,6 +21,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import junit.framework.Assert;
 
 public class StepDefinition extends BaseClass {
 	
@@ -42,10 +43,9 @@ public class StepDefinition extends BaseClass {
 	@Given("user launch the adactin application")
 	public void user_launch_the_adactin_application() throws InterruptedException, IOException {
 
-		String url = FileReadManager.GetInstance().CrInstance().getUrl();
+		String url=FileReadManager.GetInstance().CrInstance().getUrl();
 		getUrl(url);
 		Thread.sleep(5000);
-
 	}
 
 	@When("^user enter valid username \"([^\"]*)\" on user name field$")
@@ -275,9 +275,15 @@ public class StepDefinition extends BaseClass {
 		Thread.sleep(5000);
 	}
 
+	
 	@Then("^user to validate the account logout$")
 	public void user_to_validate_the_account_logout() throws Throwable {
-
+		
+		
+		 browserLaunch("chrome");
+		 String url=FileReadManager.GetInstance().CrInstance().getUrl();
+			getUrl(url);
+		Assert.assertEquals("", "    ");
 	}
 
 }
