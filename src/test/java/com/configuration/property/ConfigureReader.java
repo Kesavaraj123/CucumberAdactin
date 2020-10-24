@@ -17,8 +17,7 @@ public class ConfigureReader {
 
 	public ConfigureReader() throws IOException {
 
-		File f = new File(
-				"C:\\Users\\kesavaraj\\eclipse-workspace\\AdactinCucumber\\src\\test\\java\\com\\configuration\\property\\Configuration.properties");
+		File f = new File("C:\\Users\\kesavaraj\\eclipse-workspace\\AdactinCucumber\\src\\test\\java\\com\\configuration\\property\\Configuration.properties");
 		FileInputStream fis = new FileInputStream(f);
 
 		p = new Properties();
@@ -31,8 +30,8 @@ public class ConfigureReader {
 
 	}
 
-	public String getUrl() {
-		String url = p.getProperty("grtUrl");
+	public String getUrll() {
+		String url = p.getProperty("gettUrl");
 		return url;
 
 	}

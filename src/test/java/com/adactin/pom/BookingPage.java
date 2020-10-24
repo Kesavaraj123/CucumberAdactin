@@ -8,7 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 public class BookingPage {
 	
 	public static WebDriver driver;
-	@FindBy(xpath = "(//select[@class='search_combobox'])[1]")
+	
+	@FindBy(id = "location")
 	private WebElement country;
 
 	@FindBy(id = "hotels")

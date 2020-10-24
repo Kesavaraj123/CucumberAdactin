@@ -18,8 +18,7 @@ Scenario Outline:user checking the login funtion using valid username and valid 
 		|keshavunique|12345678|
 		
 		
-		Scenario: user to  fill the booking details 
-			Given user navigated to booking details page 
+		Scenario: user to  fill the booking details  
 			When user to select the  location 
 			And user to select the hotel 
 			And user to select the  roomtype 

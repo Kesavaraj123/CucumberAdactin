@@ -13,7 +13,8 @@ public class PomObjectManager {
 	public static SignPage sp;
 	public static BookingPage bp;
 	public static VerifyPage vp;
-
+	public static PaymentPage pp;
+	
 	public PomObjectManager(WebDriver driver2) {
 		this.driver=driver2;
 	}
@@ -35,5 +36,5 @@ public class PomObjectManager {
 		pp = new PaymentPage(driver);
 		return pp;
 	}
-	public static PaymentPage pp;
+	
 }

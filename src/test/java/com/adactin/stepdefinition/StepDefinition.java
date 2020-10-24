@@ -24,8 +24,8 @@ import cucumber.api.java.en.When;
 import junit.framework.Assert;
 
 public class StepDefinition extends BaseClass {
-	
-	//public static WebDriver driver= browserLaunch("chrome");
+
+	// public static WebDriver driver= browserLaunch("chrome");
 	public static WebDriver driver = Runner.driver;
 	public static PomObjectManager pom = new PomObjectManager(driver);
 
@@ -38,12 +38,12 @@ public class StepDefinition extends BaseClass {
 	public void user_to_login_to_application() throws Throwable {
 		System.out.println("user login in the application");
 
-	}
+	} 
 
 	@Given("user launch the adactin application")
 	public void user_launch_the_adactin_application() throws InterruptedException, IOException {
 
-		String url=FileReadManager.GetInstance().CrInstance().getUrl();
+		String url = FileReadManager.GetInstance().CrInstance().getUrll();
 		getUrl(url);
 		Thread.sleep(5000);
 	}
@@ -65,6 +65,7 @@ public class StepDefinition extends BaseClass {
 		// String passwor = FileReadManager.GetInstance().CrInstance().getPasswor();
 		typehere(pom.getSp().getPassword(), password);
 	}
+	
 
 	@When("user click on the login button")
 	public void user_click_on_the_login_button() throws IOException, InterruptedException {
@@ -82,13 +83,15 @@ public class StepDefinition extends BaseClass {
 
 	@Then("user validate the name Of the user in homepage")
 	public void user_validate_the_name_Of_the_user_in_homepage() {
+		System.out.println("just");
 
 	}
 
-	@Given("user navigated to booking details page")
-	public void user_navigated_to_booking_details_page() {
-
-	}
+	/*
+	 * @Given("user navigated to booking details page") public void
+	 * user_navigated_to_booking_details_page() throws InterruptedException {
+	 * System.out.println("navigated"); Thread.sleep(3000); }
+	 */
 
 	@When("user to select the  location")
 	public void user_to_select_the_location() throws IOException {
@@ -110,8 +113,7 @@ public class StepDefinition extends BaseClass {
 	public void user_to_select_the_roomtype() throws IOException {
 		// BookingPage bp = new BookingPage(driver);
 		// String roomType = FileReadManager.GetInstance().CrInstance().getRoomType();
-		
-		
+
 		dropDown(pom.getBp().getRoomtype(), "text", "Super Deluxe");
 	}
 
@@ -267,7 +269,7 @@ public class StepDefinition extends BaseClass {
 	public void user_navigated_to_confirmation_page() throws Throwable {
 	}
 
-	@When("^user to click on the Logout button$")
+	@Then("^user to click on the Logout button$")
 	public void user_to_click_on_the_Logout_button() throws Throwable {
 		// PaymentPage pm = new PaymentPage(driver);
 
@@ -276,14 +278,12 @@ public class StepDefinition extends BaseClass {
 	}
 
 	
-	@Then("^user to validate the account logout$")
-	public void user_to_validate_the_account_logout() throws Throwable {
-		
-		
-		 browserLaunch("chrome");
-		 String url=FileReadManager.GetInstance().CrInstance().getUrl();
-			getUrl(url);
-		Assert.assertEquals("", "    ");
-	}
-
+	  @Then("^user to validate the account logout$") public void
+	  user_to_validate_the_account_logout() throws Throwable {
+	  
+	  browserLaunch("chrome"); 
+	  String url =FileReadManager.GetInstance().CrInstance().getUrll(); getUrl(url);
+	  Assert.assertEquals("", "    "); 
+	  }
+	 
 }

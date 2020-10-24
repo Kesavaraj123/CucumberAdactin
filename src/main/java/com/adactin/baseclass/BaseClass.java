@@ -25,7 +25,7 @@ public class BaseClass {
 		try {
 			if (browsername.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver",
-						"C:\\Users\\kesavaraj\\eclipse-workspace\\AdactinCucumber\\Driver\\chromedriver.exe");
+						"C:\\Users\\kesavaraj\\eclipse-workspace\\AdactinCucumber\\Driver2\\chromedriver.exe");
 				driver = new ChromeDriver();
 			} else if (browsername.equalsIgnoreCase("ie")) {
 
@@ -50,6 +50,7 @@ public class BaseClass {
 	}
 
 			public static void getUrl(String url) {
+				
 				try {
 					driver.get(url);
 
@@ -292,9 +293,9 @@ public class BaseClass {
 				}
 			}
 
-			public static void frame(WebElement element) {
+			public static void frame() {
 				try {
-					driver.switchTo().frame(element);
+					driver.switchTo().frame(0);
 
 				} catch (Exception e) {
 				}
