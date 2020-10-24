@@ -24,7 +24,7 @@ public class PaymentPage {
 	@FindBy(xpath = "//select[@name='cc_exp_year']")
 	private WebElement expyear;
 
-	@FindBy(xpath = "//input[@name='cc_cvv']")
+	@FindBy(id = "cc_cvv")
 	private WebElement ccvnum;
 
 	@FindBy(xpath = "(//input[@type='button'])[1])")

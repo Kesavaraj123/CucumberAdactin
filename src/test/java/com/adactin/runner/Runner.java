@@ -18,10 +18,13 @@ import cucumber.api.junit.Cucumber;
 glue = "com\\adactin\\stepdefinition",
 plugin = {
 		"pretty", "html:Report", "com.cucumber.listener.ExtentCucumberFormatter:Report\\extentReport.html",
-		"rerun:Report/FailedScenario.txt" },
-		// plugin=
-		// {"pretty","html:Report","com.cucumber.listener.ExtentCucumberFormatter:report\\extentReport.html"},
-		// "rerun:Report1/FailedScenario.txt"
+		"rerun:Report/FailedScenario.txt"
+		},
+
+
+
+
+
 		monochrome = true, dryRun = false, strict = true)
 
 public class Runner {
